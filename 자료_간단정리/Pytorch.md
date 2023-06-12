@@ -77,3 +77,8 @@ def forward(self, x):
 model = NeuralNetwork().to(device)
 print(model)
 ```
+
+## 출처
+    - https://developer.oracle.com/ko/learn/technical-articles/what-is-pytorch#:~:text=PyTorch%20%EC%A0%95%EC%9D%98%EB%90%A8,-Facebook%EC%97%90%EC%84%9C%20%EA%B0%9C%EB%B0%9C&text=PyTorch%EB%9E%80%3F,%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%20%EB%A7%A4%EC%9A%B0%20%EC%A0%81%ED%95%A9%ED%95%A9%EB%8B%88%EB%8B%A4.
+    - https://jfun.tistory.com/238
+
