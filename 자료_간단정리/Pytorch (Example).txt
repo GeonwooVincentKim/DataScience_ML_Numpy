@@ -1,0 +1,84 @@
+# Pytorch
+
+## 정의
+    - 2017년 초에 공개된 DL Framework 로 개발자들과 연구자들이 쉽게 GPU 를 활용하여 인공 신경망 Model 을 만들고 학습시킬 수 있게 도와줌
+    - Torch - Pytorch 의 전신, Lua Programing 언어로 되어 있었으나, Python 으로 새로 작성된 Framework 인 Pytorch 의 탄생
+    - Python 을 사용하면 맞춤형 Data 계층 및 Network Architecture 를 쉽게 생성 가능
+    
+## PyTorch Tensor
+    Pytorch 는 Tensor 라고 하는 다차원 배열 Data 를 나타내며, NumPy 와 같이 인기 있는 다른 Python Framework 에서 Data 가 처리되는 방식과 비슷
+
+```python
+## Numpy Tensor
+
+import numpy as np
+np.array([[0.0, 1.3], [2.8, 3.3], [4.1, 5.2], [6.9, 7.0]])
+
+array([[0. , 1.3],
+[2.8, 3.3],
+[4.1, 5.2],
+[6.9, 7. ]])
+```
+
+```python
+import torch
+
+torch.tensor([[0.0, 1.3], [2.8, 3.3], [4.1, 5.2], [6.9, 7.0]])
+tensor([[0.0000, 1.3000],
+[2.8000, 3.3000],
+[4.1000, 5.2000],
+[6.9000, 7.0000]])
+```
+
+## Pytorch Data 작업
+    - DataSet 는 Tensor 에 변수를 저장하고, DataLoader 는 DataSet 주위에 반복 가능한 변수를 Lapping
+    - 모든 TorchVision 에는 transform 및 target_transform 이라는 두 개의 변수가 존재
+    
+```python
+# Download training data from open datasets.
+training_data = datasets.FashionMNIST(
+    root=data,
+    train=True,
+    download=True,
+    transform=ToTensor(),
+)
+
+# Download test data from open datasets.
+test_data = datasets.FashionMNIST(
+    root=data,
+    train=False,
+    download=True,
+    transform=ToTensor(),
+)
+```
+
+## Pytorch Model 생성
+    nn.module 에서 입력 상속하는 Class 생성
+
+```python
+# Define model
+class NeuralNetwork(nn.Module)
+    def __init__(self)
+        super(NeuralNetwork, self).__init__()
+        self.flatten = nn.Flatten()
+        self.linear_relu_stack = nn.Sequential(
+        nn.Linear(2828, 512),
+        nn.ReLU(),
+        nn.Linear(512, 512),
+        nn.ReLU(),
+        nn.Linear(512, 10)
+)
+
+def forward(self, x)
+    x = self.flatten(x)
+    logits = self.linear_relu_stack(x)
+    return logits
+
+model = NeuralNetwork().to(device)
+print(model)
+```
+
+## 출처
+    - httpsdeveloper.oracle.comkolearntechnical-articleswhat-is-pytorch#~text=PyTorch%20%EC%A0%95%EC%9D%98%EB%90%A8,-Facebook%EC%97%90%EC%84%9C%20%EA%B0%9C%EB%B0%9C&text=PyTorch%EB%9E%80%3F,%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%20%EB%A7%A4%EC%9A%B0%20%EC%A0%81%ED%95%A9%ED%95%A9%EB%8B%88%EB%8B%A4.
+    - httpsjfun.tistory.com238
+
