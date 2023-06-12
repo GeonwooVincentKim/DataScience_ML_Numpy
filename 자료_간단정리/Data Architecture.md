@@ -42,3 +42,7 @@
     
 ### Data Mesh
     Business Domain 에 따라 Data 를 조직화하는 탈중앙집중식 Data Architecture
+
+## 출처
+    - https://www.ibm.com/kr-ko/topics/data-architecture
+    - https://www.stevenjlee.net/2020/06/04/%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%95%84%ED%82%A4%ED%85%8D%ED%8A%B8-architect-ea-ba-sa-ta-aa-da/
