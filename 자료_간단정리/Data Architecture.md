@@ -20,3 +20,11 @@
     
 ### DA (Data Architect)
     Business 나 Project 전체의 Data 와 관련된 Architecture 담당
+
+### TA (Technical Architect)
+    Mission Critical Application 을 지원하는데 필요한 기술 Infra (HW, SW, Networking)
+    
+## Data 관리 System 의 유형
+
+### Data Warehouse
+    Enterprise 전반의 다양한 RDS (관계형 Data Source) 의 Data 를 하나의 일관적인 중앙집중식 서비스
