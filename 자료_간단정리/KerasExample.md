@@ -1,5 +1,4 @@
 # Keras (Example)
-
 ## 정의
     - 거의 모든 종류의 DL Model 을 간편하게 만들고, 훈련시킬 수 있는 Python 을 위한 DL Framework
     - Tensorflow 에서 Release 하였으며, 신속하게 실험을 해야 하는 연구자들을 위해 개발됨
