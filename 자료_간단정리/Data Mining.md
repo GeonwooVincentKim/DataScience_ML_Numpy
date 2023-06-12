@@ -42,3 +42,8 @@
     - 신경망
     - K-최근접 아웃
     - 비지도 학습 (Clustering, 연관성 분석, 주요 구성 요소 분석, 실천에서의 지도 및 비지도 접근 방식)
+
+## 출처
+    - https://aws.amazon.com/ko/what-is/data-mining/#:~:text=%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%A7%80%EC%9B%90%ED%95%98%EB%82%98%EC%9A%94%3F-,%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%A7%88%EC%9D%B4%EB%8B%9D%EC%9D%B4%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94%3F,%EC%8B%A4%EC%9A%A9%EC%A0%81%EC%9D%B8%20%EC%A7%80%EC%8B%9D%EC%9C%BC%EB%A1%9C%20%EB%B3%80%ED%99%98%ED%95%A9%EB%8B%88%EB%8B%A4.
+    - https://www.tibco.com/ko/reference-center/what-is-data-mining
+    - https://www.ibm.com/kr-ko/topics/data-mining
