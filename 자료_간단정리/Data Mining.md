@@ -6,9 +6,7 @@
 ## Data Mining Process
 
 ### Business 목표 설정
-    Project 목표 및 범위 식별
-
-#### Business 목표 설정
+    - Project 목표 및 범위 식별
     - 해결해야 하는 문제
     - Project 제약 또는 제한
     - 잠재적 Solution 의 Business 영향
@@ -30,3 +28,17 @@
 
 #### 결과 평가 및 지식 활용 (배포)
     결과 평가 및 해석, 배포 중에 작업 Model 을 사용하여 Business Intelligence 생성
+
+## Data Mining 작동 방식
+    - 자동 Pattern 인식
+    - 가장 가능성 있는 결과 예측
+    - 자연적으로 발생하는 Group 화에 중점 두기
+
+## Data Mining 의 유형
+    - 선형 회귀
+    - 로지스틱 회귀
+    - 시계열
+    - 분류 / 회귀 트리
+    - 신경망
+    - K-최근접 아웃
+    - 비지도 학습
