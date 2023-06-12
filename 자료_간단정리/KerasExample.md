@@ -1,4 +1,4 @@
-# Keras
+# Keras (Example)
 
 ## 정의
     - 거의 모든 종류의 DL Model 을 간편하게 만들고, 훈련시킬 수 있는 Python 을 위한 DL Framework
