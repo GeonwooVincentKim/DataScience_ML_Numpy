@@ -29,3 +29,4 @@
     - 결과 만족스러울 때까지 Data Mining SW 를 조정하고 다시 구성
 
 #### 결과 평가 및 지식 활용 (배포)
+    결과 평가 및 해석, 배포 중에 작업 Model 을 사용하여 Business Intelligence 생성
