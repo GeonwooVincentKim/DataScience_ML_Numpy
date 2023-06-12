@@ -40,16 +40,3 @@
   ## 출처
     - https://www.elancer.co.kr/blog/view?seq=129#:~:text=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%A6%AC%ED%84%B0%EB%9F%AC%EC%8B%9C%EB%8A%94%20'%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC,%EC%9E%88%EB%8A%94%20%EB%8A%A5%EB%A0%A5'%EC%9D%84%20%EB%9C%BB%ED%95%A9%EB%8B%88%EB%8B%A4.
     - https://www.ibm.com/kr-ko/resources/the-data-differentiator/data-literacy
-
-# Data Mining
-  ## 정의
-    ### 대량 Dataset 의 처리 및 탐색을 위한 분석에 사용되는 Computer 지원 기법
-    ### Data Mining 도구와 방법을 사용해 조직은 Data 에 숨겨진 Pattern 과 관계를 찾을 수 있으며, 원시 Data 를 실용적인 지식으로 변환됩니다.
-  
-  ## Data Mining Process
-    -> 1. Business 목표 설정
-    -> 2. Data 준비
-    -> 3. Model 구축 및 Pattern Mining
-    -> 4. 결과 평가 및 지식 활용
-    
-  
