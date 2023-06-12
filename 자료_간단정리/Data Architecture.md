@@ -28,3 +28,17 @@
 
 ### Data Warehouse
     Enterprise 전반의 다양한 RDS (관계형 Data Source) 의 Data 를 하나의 일관적인 중앙집중식 서비스
+
+### Data Mart
+    HR 부서와 같이 단일 Team, 조직 내 특정 사용자 Group 에 중요하고 필요한 일부 Data 를 포함
+    
+### Data Lake
+    원시 Data 를 보통 PetaByte 규모로 저장하며, 정형 Data 와 비정형 Data 를 모두 저장할 수 있으므로 다른 Data Storage 와 차별화
+    
+## Data Architecture 유형
+
+### Data Fabric
+    Data 제공자와 Data 소비자 간 Data 가치 사슬에서 Data 통합, Data Engineering 및 거버넌스의 자동화에 중점을 둔 Architecture
+    
+### Data Mesh
+    Business Domain 에 따라 Data 를 조직화하는 탈중앙집중식 Data Architecture
