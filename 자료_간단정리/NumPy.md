@@ -62,5 +62,3 @@ np.ones(2, dtype=np.int64)
 # 실행결과
 # array([1, 1])
 ```
-
-
