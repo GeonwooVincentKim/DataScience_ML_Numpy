@@ -31,9 +31,29 @@ ndarray.data
 ```
 
 ### 배열 생성
-```tensorflow
+    - 기본적인 NumPy 배열 생성은 np.array() 함수를 통해 Python list 를 인자로 받아 아래와 같이 생성 가능
+
+```python
 a = np.array([0, 1, 2])
 b = np.array([(1.5, 2, 3)NumPy, (4, 5, 6)])
 print(a)
 print(b)
+
+# 실행결과
+# array([0, 1, 2])
+# array([[1.5, 2. , 3. ],
+#        [4. , 5. , 6. ]])
+
+### 아래와 같은 방법으로도 NumPy Array 생성 가능
+np.zeros()
+np.ones()
+np.empty()
+np.arrange()
+
+# 실행결과
+# array([0., 0.]) 
+# array([1., 1.]) 
+# array([0, 1, 2, 3])
 ```
+
+
