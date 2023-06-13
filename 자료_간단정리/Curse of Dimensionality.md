@@ -53,3 +53,6 @@
 ### PCA & t-SNE 출처
     - https://darkpgmr.tistory.com/110
     - https://angeloyeo.github.io/2019/07/27/PCA.html
+    - https://3months.tistory.com/571
+    - https://minye-lee19.gitbook.io/sw-engineer/business-analytics/class/1-7-t-sne
+    - https://skyeong.net/284
