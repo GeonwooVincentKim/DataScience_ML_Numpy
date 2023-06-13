@@ -27,7 +27,22 @@
     - 특정 방향으로 Data 들의 분산이 가장 큰 방향 Vector 들
     - PCA 는 Data 하나하나에 대한 성분을 분석하는 것이 아닌, 여러 Data 들이 하나의 분포를 이룰 때, 이 분포의 주 성분을 분석해 주는 방법
     
+### PCA 활용
+    - 2D 점들의 직선 근사 (1차 함수)
+    - 3D 점들의 직선 또는 평면 근사
+    - eigenface 와 영상인식 응용
+    - PCA 를 이용한 얼굴검출과 얼굴 인식
+    - PCA 를 이용한 안경제거
+       
+## t-SNE 정의
+    - 
+    
 ## 츨처
+
+### 차원의 저주 출처
     - https://oi.readthedocs.io/en/latest/ml/curse_of_dimensionality.html
     - https://for-my-wealthy-life.tistory.com/40
     
+### PCA & t-SNE 출처
+    - https://darkpgmr.tistory.com/110
+    - https://angeloyeo.github.io/2019/07/27/PCA.html
