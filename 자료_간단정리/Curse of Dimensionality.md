@@ -17,4 +17,17 @@
         
     - 원본 Data 로 훈련해서 시간이 오래 걸리는지 확인하고 차원 축소 여부를 결정할 필요가 있음
     
+# PCA & t-SNE 비교분석
 
+## PCA 정의
+    - 분포된 Data 들의 주성분 (Principal Component) 를 찾아주는 방법
+    - 예시) 2차원 좌표평면에 n개의 점 Data (x1, y1), (x2, y2), (xn, yn) 들이 타원형 분포되어 있을 때
+
+### 주성분 정의
+    - 특정 방향으로 Data 들의 분산이 가장 큰 방향 Vector 들
+    - PCA 는 Data 하나하나에 대한 성분을 분석하는 것이 아닌, 여러 Data 들이 하나의 분포를 이룰 때, 이 분포의 주 성분을 분석해 주는 방법
+    
+## 츨처
+    - https://oi.readthedocs.io/en/latest/ml/curse_of_dimensionality.html
+    - https://for-my-wealthy-life.tistory.com/40
+    
