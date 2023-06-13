@@ -35,7 +35,14 @@
     - PCA 를 이용한 안경제거
        
 ## t-SNE 정의
-    - 
+    - 고차원 Data 를 저차원 Data 로 변환하는 차원 축소 (Dimensionality Reduction) 기법, 좋은 성능 -> 비선형 차원 축소 기법 (Nonlinear Dimensionality Reduction)
+    - 차원 축소 목적 -> 시각화, Clustering, 예측 Model 일반화 성능 향상
+    - 고차원 공간상의 Data Point 들의 위치를 저차원 공간상에서의 극적으로 표현해줌, Data 존재할 수 있는 군집들을 시각화해서 표현해주는데 강점을 갖고, 시각화에 주로 사용됨
+
+### 차원 축소 3가지 Category
+    - feature selection
+    - matrix factorization
+    - neighbor graphs
     
 ## 츨처
 
