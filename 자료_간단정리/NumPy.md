@@ -32,6 +32,8 @@ ndarray.data
 
 ### 배열 생성
     - 기본적인 NumPy 배열 생성은 np.array() 함수를 통해 Python list 를 인자로 받아 아래와 같이 생성 가능
+    - zero() 함수는 0으로 가득 찬 배열 생성, ones() 함수는 1로 가득 찬 배열 생성, arrange() 함수는 특정 수열을 나타내는 배열 생성
+    - dtype = float64, Keyword 인수 dtype 을 통해 지정 가능
 
 ```python
 a = np.array([0, 1, 2])
@@ -54,6 +56,11 @@ np.arrange()
 # array([0., 0.]) 
 # array([1., 1.]) 
 # array([0, 1, 2, 3])
+
+np.ones(2, dtype=np.int64)
+
+# 실행결과
+# array([1, 1])
 ```
 
 
