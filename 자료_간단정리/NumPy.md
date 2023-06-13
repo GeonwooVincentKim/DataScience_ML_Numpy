@@ -31,7 +31,7 @@ ndarray.data
 ```
 
 ### 배열 생성
-```numpy
+```tensorflow
 a = np.array([0, 1, 2])
 b = np.array([(1.5, 2, 3)NumPy, (4, 5, 6)])
 print(a)
