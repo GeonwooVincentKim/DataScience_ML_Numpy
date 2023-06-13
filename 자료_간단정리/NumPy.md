@@ -62,3 +62,7 @@ np.ones(2, dtype=np.int64)
 # 실행결과
 # array([1, 1])
 ```
+
+## 출처
+    - https://ko.wikipedia.org/wiki/NumPy
+    - https://modulabs.co.kr/blog/python-numpy/
