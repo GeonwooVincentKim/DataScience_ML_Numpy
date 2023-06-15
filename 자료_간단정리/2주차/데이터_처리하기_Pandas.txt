@@ -3,4 +3,3 @@
 - 고성능 Array 계산 Library 인 Numpy 와 통합하여 강력한 SpreadSheet 처리 기능 제공
 - Indexing, 연산용 함수, 전처리 함수 등을 제공함
 
-2. 
