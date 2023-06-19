@@ -1,0 +1,43 @@
+Key Components of DL
+- The Data that the model can learn from
+- The model how to transform the data
+- The loss function that quantifies the badness of the model
+- The algorithm to adjust the parameters to minimize the loss
+
+
+Data
+- Data depend on the type of the problem to solve
+  = Classification
+  = Semantic Segmentation (Dense Classification)
+  = Detection
+  = Post Estimiation
+  = Visual QnA
+
+
+Model
+- AlexNet
+- GoogleNet
+- ResNet
+- DenseNet
+- LSTM
+- Deep AutoEncoders
+- GAN
+
+
+LOSS
+- The loss function is a proxy of what we want to achieve
+  = Regression Task -> MSE
+  = Classification Task -> CE
+  = Probabilistic Task -> MLE -> MSE
+
+
+Optimization Algorithm
+- Dropout
+- Early Stopping
+- K-fold validation
+- Weight decay
+- Batch normalization
+- MixUp
+- Ensemble
+- Bayesian Optimization
+
