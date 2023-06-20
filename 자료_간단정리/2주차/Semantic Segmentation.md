@@ -1,6 +1,6 @@
 # Semantic Segmentation 이란?
 
-   Digital Image 를 여러 개의 Pixel 집합으로 나누는 과정
+    Digital Image 를 여러 개의 Pixel 집합으로 나누는 과정
 - 2. 분할을 통해 Image 표현을 해석하기 쉬운 것으로 단순화하여 변환하는 것
 - 3. Computer Vision 분야에서 많이 사용 중임
 
