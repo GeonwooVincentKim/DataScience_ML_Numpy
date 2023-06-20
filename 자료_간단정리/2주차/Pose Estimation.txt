@@ -1,0 +1,34 @@
+2. Pose Estimation 이란 (HPE - Human Post Estimation)
+- 1. Image 나 Video 에서 사람의 관절 (Key point) 이 어떻게 구성되어 있는지 위치 측정 및 추정 (Localization)
+  = 1. Key point 란?
+    -> Head, Arm, Wrist, Knee, Ankle, torso
+
+  = 2. Human Body Models
+    -> 1. Skeleton-based Model
+       = 1. 사람 인식, 사람 위에 움직이는 관절부위를 탐지하여 미리 정해진 Skeleton 을 분할해서 투영해주는 것
+       = 2. 분할된 부분은 모두 skeleton 학습과 추출 가능
+         -> 손과 같은 부분에도 이를 추출하여 제스쳐, 손동작 파악으로 사용 가능
+
+       = 3. 자료 출처
+	 -> 1. https://wiserloner.tistory.com/1103
+	 -> 2. https://reading-cv-paper.tistory.com/entry/CVPR-2019Skeleton-Based-Action-Recognition-with-Directed-Graph-Neural-Networks
+	 -> 3. http://dmqm.korea.ac.kr/activity/seminar/351#:~:text=%EC%9D%B4%20%EC%A4%91%20skeleton%2Dbased%20HAR,%ED%98%95%ED%83%9C%EB%A1%9C%20%EC%9D%B4%ED%95%B4%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8B%A4.
+
+    -> 2. Contour-based Model (Active Contour Model)
+       = 1. 물체 내부와 외부의 energy minimization 을 통해 변형 가능한 Model 을 Image 에 일치시키는 기술
+       = 2. Object tracking, shape recognition, segmentation => Computer Vision 분야에서 널리 사용
+       = 3. Internal Energy -> Curve 의 Shape 을 조절하는 식
+       = 4. External Energy 
+	 -> 1. Image Intensify 를 이용하여 Edge 를 찾도록 도와줌
+	 -> 2. Gradient 를 이용하여 정의할 수 있음
+	    => 1. curve points 들이 너무 edge 에서 멀리 정의된 경우, 제대로 작동하지 않음
+	    => 2. gradient vector flow (GVF) 를 이용
+
+       = 5. 의료영상 Segmentation 에서 빈번하게 이용되고 있음
+       = 6. 자료 출처
+	 -> 1. https://damio.tistory.com/m/74
+	 -> 2. https://nuguziii.github.io/survey/S-002/
+	 -> 3. https://www.edwith.org/medical-20200327/lecture/63155/
+
+    -> 3. Volume-based Model
+       = 1. 
