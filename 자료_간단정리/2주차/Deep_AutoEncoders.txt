@@ -1,0 +1,19 @@
+5. Deep AutoEncoders
+- 1. 정의
+  = 1. Data Encoding, 데이터 압축, 원래 입력에 가까운 표현으로 데이터를 디코딩(재구성) 비지도학습 인공신경망
+  = 2. AE는 입출력 값이 동일한 값을 만들어내는 네트워크 구조를 가지고 있으며
+  = 3. 구조적으로 데이터의 노이즈를 무시하는 방법을 학습하여 데이터의 차원을 줄인다는 특징이 있습니다. 
+
+- 2. Stacked AutoEncoders 정의
+  = 1. layer by layer 로 초기화 진행
+  = 2. 각 층별로 이전 Data 값으로 복원할 수 있는 w (가중치) Update, latent layer 까지 학습 진행
+  = 3. latent layer 를 다시 weight transpose 통해 Data 출력하는 일련의 과정
+
+- 3. Sparse AutoEncoder
+  = 1. 듬성듬성한 AE
+  = 2. Hidden Unit 수가 Input Data 의 차원의 수에 비해 상당히 많은 경우, Sparsity Parameter 제어
+  = 3. Hidden Unit 의 Activation 을 제어가능한 AE
+
+- 4. 자료 출처
+  = 1. https://wikidocs.net/3413
+  = 2. https://daje0601.tistory.com/190#:~:text=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EC%9D%B8%EC%BD%94%EB%94%A9,%EC%A7%80%EB%8F%84%ED%95%99%EC%8A%B5%20%EC%9D%B8%EA%B3%B5%EC%8B%A0%EA%B2%BD%EB%A7%9D%EC%9E%85%EB%8B%88%EB%8B%A4.
