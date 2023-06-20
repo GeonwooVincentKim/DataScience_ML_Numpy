@@ -1,30 +1,33 @@
 # Semantic Segmentation 이란?
 
-    Digital Image 를 여러 개의 Pixel 집합으로 나누는 과정
-- 2. 분할을 통해 Image 표현을 해석하기 쉬운 것으로 단순화하여 변환하는 것
-- 3. Computer Vision 분야에서 많이 사용 중임
+    - Digital Image 를 여러 개의 Pixel 집합으로 나누는 과정
+    - 분할을 통해 Image 표현을 해석하기 쉬운 것으로 단순화하여 변환하는 것
+    - Computer Vision 분야에서 많이 사용 중임
 
-- 4. Computer Vision 이란
-  = 1. AI 의 한 분야, Computer 와 System 을 통함
-  = 2. Digital Image, Video 및 기타 시각적 입력, 의미 있는 정보 추출 및 작업 실행, 추천
-  = 3. AI -> Computer 가 생각, Computer Vision -> Computer 가 보고, 관찰하고 이해 가능
-  = 4. 예시) DL 의 CNN (Convolutional Neural Network)
-  = 5. 참고 자료 : https://www.ibm.com/kr-ko/topics/computer-vision
+## Computer Vision 이란
+	- AI 의 한 분야, Computer 와 System 을 통함
+	- Digital Image, Video 및 기타 시각적 입력, 의미 있는 정보 추출 및 작업 실행, 추천
+    - AI -> Computer 가 생각, Computer Vision -> Computer 가 보고, 관찰하고 이해 가능
+  	- 예시) DL 의 CNN (Convolutional Neural Network)
+  	- 참고 자료 : https://www.ibm.com/kr-ko/topics/computer-vision
 
-- 5. Semantic Segmentation 에서 다뤄지는 문제들
-  = 1. Classification (분류)
-    -> Input 에 대해서 하나의 Label 을 예측하는 작업, AlexNet, ResNet, Xception 등의 Model
+## Semantic Segmentation 에서 다뤄지는 문제들
 
-  = 2. Localization / Detection (발견)
-    -> 1. 물체의 Label 을 예측하면서 그 물체가 어디에 있는지 정보 제공
-    -> 2. 물체가 있는 곳에 네모를 그리는 Model 들인 YOLO, R-CNN
-    -> 3. YOLO Model (You Only Look One)
-       => 1. Object Detection 분야에서 많이 알려진 Model
-       => 2. 이미지 전체를 한 번 본 후, 주변 정보까지 학습하여 이미지 전체를 처리하는 Object Detection Model
-       => 3. 참고자료
-	  - https://dotiromoook.tistory.com/24#:~:text=%E2%9C%85%20YOLO%20(you%20only%20look%20once)%20%ED%8A%B9%EC%A7%95&text=%EC%89%BD%EA%B2%8C%20%EB%A7%90%ED%95%B4%2C%20%EC%9D%B4%EC%A0%84%20%EC%9D%98%20R,%EB%A5%BC%20CNN%EC%97%90%20%ED%86%B5%EA%B3%BC%EC%8B%9C%ED%82%A8%EB%8B%A4.
+### Classification (분류)
+    - Input 에 대해서 하나의 Label 을 예측하는 작업, AlexNet, ResNet, Xception 등의 Model
 
-	  - https://byul91oh.tistory.com/321
+### Localization / Detection (발견)
+    - 물체의 Label 을 예측하면서 그 물체가 어디에 있는지 정보 제공
+    - 물체가 있는 곳에 네모를 그리는 Model 들인 YOLO, R-CNN
+
+#### YOLO Model (You Only Look One)
+    - Object Detection 분야에서 많이 알려진 Model
+    - 이미지 전체를 한 번 본 후, 주변 정보까지 학습하여 이미지 전체를 처리하는 Object Detection Model
+
+#### YOLO Model 참고자료
+	- https://dotiromoook.tistory.com/24#:~:text=%E2%9C%85%20YOLO%20(you%20only%20look%20once)%20%ED%8A%B9%EC%A7%95&text=%EC%89%BD%EA%B2%8C%20%EB%A7%90%ED%95%B4%2C%20%EC%9D%B4%EC%A0%84%20%EC%9D%98%20R,%EB%A5%BC%20CNN%EC%97%90%20%ED%86%B5%EA%B3%BC%EC%8B%9C%ED%82%A8%EB%8B%A4.
+
+	- https://byul91oh.tistory.com/321
 
   = 3. Segmentation (분할)
     -> 1. 모든 Pixel 의 Label 을 예측
