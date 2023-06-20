@@ -1,0 +1,30 @@
+3. VisualQnA 란?
+- 1. Visual Question Answering
+  = 1. AI-Complete Task
+    -> AI 분야에서 가장 어려운 task, human-level 의 Intelligence 를 요구하는 Task
+
+  = 2. VQA Task
+    -> 1. Image (Visual) 와 그 Image 에 대한 질문 주어질 때, 해당 질문에 맞는 올바른 답변을 만들어내는 Task
+    -> 2. VQA Challenge -> IEEE 워크샵 중 하나, VQA Homepage 에서 매년 열림
+    -> 3. AI 의 필요한 능력
+       = 1. Fine-grained recognition
+	 => 이 치킨에 있는 소스는 어떤 종류인가
+
+       = 2. commonsense reasoning
+	 => 안경을 쓴 남자가 나온 사진 - 이 남자는 시력이 좋은가
+
+       = 3. knowledge base reasoning
+	 => 고기가 있는 피자 사진 - 이 피자는 비건피자인가
+
+       = 4. activity recognition, object detection
+
+- 2. 관련 연구
+  = 1. VQA Efforts -> 제한된 환경, DataSet 안에서 다루며, 물체 종류 적고, 답변 단어 등도 제한적
+  = 2. Text-based Q&A -> NLP 와 Text 처리 분야에서 잘 연구됨, text 와 vision 모두 의존하며, Text 기반
+  = 3. Describing Visual Content -> Image Tagging, Image & Video Captioning
+  = 4. Other Vision + Language Tasks -> Coreference resolution, generating referring expressions
+
+- 3. 참고 자료
+  = 1. https://greeksharifa.github.io/computer%20vision/2019/04/17/Visual-Question-Answering/#:~:text=%EC%9D%B4%20%EA%B8%80%EC%97%90%EC%84%9C%EB%8A%94%20VQA%3A%20Visual,%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%96%B4%EB%82%B4%EB%8A%94%20task%EC%9D%B4%EB%8B%A4.
+
+  = 2. https://velog.io/@stophyunn/VQA-Visual-Question-Answering
