@@ -27,51 +27,53 @@
     - Curve 의 Shape 을 조절하는 식
 
 ##### External Energy 
-	- Image Intensify 를 이용하여 Edge 를 찾도록 도와줌
-	- Gradient 를 이용하여 정의할 수 있음
-	    = curve points 들이 너무 edge 에서 멀리 정의된 경우, 제대로 작동하지 않음
-	    = gradient vector flow (GVF) 를 이용
+    - Image Intensify 를 이용하여 Edge 를 찾도록 도와줌
+    - Gradient 를 이용하여 정의할 수 있음
+      = curve points 들이 너무 edge 에서 멀리 정의된 경우, 제대로 작동하지 않음
+      = gradient vector flow (GVF) 를 이용
 
     - 의료영상 Segmentation 에서 빈번하게 이용되고 있음
     - 자료 출처
-	    = https://damio.tistory.com/m/74
-	    = https://nuguziii.github.io/survey/S-002/
-	    = https://www.edwith.org/medical-20200327/lecture/63155/
+      = https://damio.tistory.com/m/74
+      = https://nuguziii.github.io/survey/S-002/
+      = https://www.edwith.org/medical-20200327/lecture/63155/
 
-    -> 3. Volume-based Model
-       = 1. 3D 자세 추정에 사용하는 Model
-       = 2. Automated Construction of Complex Structural Models (복잡한 구조모델 자동화 구축)
-	 -> 1. Volume 이란
-	    => 1. Application, DB 및 File System 이 Data 를 저장하는 Container
-	    => 2. Host 가 Storage 의 Storage 를 Access 할 수 있도록 생성되는 논리적 구성 요소
-	    => 3. Pull, Volume Group 에서 사용할 수 있는 용량에서 생성, 정의된 용량이 있음
-	    => 4. 두 개 이상의 Drive 로 구성될 수 있지만, Volume 은 Host 에 하나의 논리적 구성 요소로 나타냄
-	    => 5. 자료 출처 : https://docs.netapp.com/ko-kr/e-series-santricity/sm-storage/what-is-a-volume.html
+#### Volume-based Model
 
-	 -> 2. 지질학 및 지구물리학 Data
-	    => 1. 구조적 Model (Structural Model)
-	    => 2. 석유물리학 특성 (Petrophysical Properties)
-	    => 3. Surface Model -> Volume Model 
-		  -> 수치적 처리 (Numerical Processing) -> App -> 운영 의사 결정 (Operational Decisions)
+##### 3D 자세 추정에 사용하는 Model
+##### Automated Construction of Complex Structural Models (복잡한 구조모델 자동화 구축)
+###### Volume 이란
+    - Application, DB 및 File System 이 Data 를 저장하는 Container
+    - Host 가 Storage 의 Storage 를 Access 할 수 있도록 생성되는 논리적 구성 요소
+    - Pull, Volume Group 에서 사용할 수 있는 용량에서 생성, 정의된 용량이 있음
+    - 두 개 이상의 Drive 로 구성될 수 있지만, Volume 은 Host 에 하나의 논리적 구성 요소로 나타냄
+    - 자료 출처: https://docs.netapp.com/ko-kr/e-series-santricity/sm-storage/what-is-a-volume.html
 
-	    => 4. 자료 출처 : https://learninggeoscience.org/local/pages/?id=179
+###### 지질학 및 지구물리학 Data
+    - 구조적 Model (Structural Model)
+    - 석유물리학 특성 (Petrophysical Properties)
+    - Surface Model -> Volume Model 
+      -> 수치적 처리 (Numerical Processing) -> App -> 운영 의사 결정 (Operational Decisions)
 
-- 2. Bottom Up
-  = 1. 전체 Image 에서 인체 주요 부위들을 먼저 찾은 뒤, 각 부위를 연결해 자세를 추정하는 방식
-  = 2. 특정한 Pose 또는 하나의 사람 객체의 Pose 로 Grouping 하는 방식 -> DeepCut Model
+    - 자료 출처 : https://learninggeoscience.org/local/pages/?id=179
 
-- 3. Top Down
-  = 1. 먼저 사람 탐지 (Detect) 한 뒤, 탐지 결과를 바탕으로 인체 주요 부위를 찾아 자세 추정을 하는 방식
-  = 2. 사람 객체에서 관절을 추정
+## Bottom Up
+    - 전체 Image 에서 인체 주요 부위들을 먼저 찾은 뒤, 각 부위를 연결해 자세를 추정하는 방식
+    - 특정한 Pose 또는 하나의 사람 객체의 Pose 로 Grouping 하는 방식 -> DeepCut Model
 
-- 4. Pose Estimation 중요성
-  = 사람의 Pose 를 잘 추적하여 사람의 행동에 대한 이해를 훨씬 세밀하게 잘 알 수 있게 됨
-    -> 자율주행에서 보행자 움직임 탐지 및 추적하여 종합적 판단하여 훨씬 안전하고 좋은 성능 만들어 낼 수 있음
+## Top Down
+    - 먼저 사람 탐지 (Detect) 한 뒤, 탐지 결과를 바탕으로 인체 주요 부위를 찾아 자세 추정을 하는 방식
+    - 사람 객체에서 관절을 추정
 
-- 5. 자료 출처
-  = 1. https://bkshin.tistory.com/entry/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B9%84%EC%A0%84-12-%EC%9E%90%EC%84%B8-%EC%B6%94%EC%A0%95Pose-Estimation%EC%9D%B4%EB%9E%80
-  = 2. https://ivdevlog.tistory.com/1
-  = 3. https://supermemi.tistory.com/entry/Human-Pose-Estimation-%EC%9D%B4%EB%9E%80-2022
-  = 4. https://ctkim.tistory.com/entry/Human-Pose-Estimation-%EA%B8%B0%EC%B4%88-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC
-  = 5. https://www.samsungsds.com/kr/insights/human_pose.html
-  = 6. https://bkshin.tistory.com/entry/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B9%84%EC%A0%84-12-%EC%9E%90%EC%84%B8-%EC%B6%94%EC%A0%95Pose-Estimation%EC%9D%B4%EB%9E%80
+## Pose Estimation 중요성
+
+### 사람의 Pose 를 잘 추적하여 사람의 행동에 대한 이해를 훨씬 세밀하게 잘 알 수 있게 됨
+    - 자율주행에서 보행자 움직임 탐지 및 추적하여 종합적 판단하여 훨씬 안전하고 좋은 성능 만들어 낼 수 있음
+
+## 자료 출처
+	- https://bkshin.tistory.com/entry/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B9%84%EC%A0%84-12-%EC%9E%90%EC%84%B8-%EC%B6%94%EC%A0%95Pose-Estimation%EC%9D%B4%EB%9E%80
+ 	- https://ivdevlog.tistory.com/1
+  	- https://supermemi.tistory.com/entry/Human-Pose-Estimation-%EC%9D%B4%EB%9E%80-2022
+  	- https://ctkim.tistory.com/entry/Human-Pose-Estimation-%EA%B8%B0%EC%B4%88-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC
+  	- https://www.samsungsds.com/kr/insights/human_pose.html
+  	- https://bkshin.tistory.com/entry/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B9%84%EC%A0%84-12-%EC%9E%90%EC%84%B8-%EC%B6%94%EC%A0%95Pose-Estimation%EC%9D%B4%EB%9E%80
