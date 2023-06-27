@@ -1,0 +1,18 @@
+1. Nabla (Del Operator)
+- 1. 물리학에서 연산자는 함수를 함수에 대응시키는 함수를 말함
+- 2. Del Operator (Nabla) -> 어떤 함수가 주어졌을 때, 그 함수의 도함수를 함숫값으로 가지는 함수
+- 3. ∇ -> Nabla 기호
+- 4. 기본적인 미분의 식 -> dx/d *(f) = f′
+- 5. Del Operator (Nabla) -> ∇ = ∂/∂x * x^ + ∂/∂y * y^ + ∂/∂z * z^
+
+	
+2. 소프트맥스 연산
+- 1. 입력받은 값을 출력으로 0 ~ 1 사이의 값으로 모두 정규화하며 출력 값들의 총합은 항상 1이 되는 특성을 가진 함수
+- 2. SoftMax 는 Binary Classification 이 아닌 Multiclass Clasification 를 지원
+- 3. SoftMax Classification 의 Cost Function
+  = 1. Input Parameter 에 대한 우도를 평가, 최대화하는 방법으로 cost function 을 만들어 냄
+  = 2. 일반적으로 SoftMax Classifier 를 만들어 내는 경우, 정답 Class 를 one-hot encoding 의 방법으로 학습
+
+
+3. ReLU (활성화 함수)
+- 1. 
